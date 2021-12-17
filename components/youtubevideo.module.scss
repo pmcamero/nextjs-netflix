@@ -1,0 +1,17 @@
+.embed_container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+} 
+
+.embed_container iframe,
+.embed_container object,
+.embed_container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,63 @@
+@use "../styles/abstracts/mixins.scss";
+
+.col {
+    //background-color: yellow;
+    width: 100%;
+    padding: 0 .5rem;
+    @include mixins.breakpoint(xs) {
+        @for $i from 1 through 12 {
+			&.col-xs-#{$i} {
+				width: calc(100% * (#{$i}/12));
+			}	
+		}
+    }
+    @include mixins.breakpoint(sm) {
+        @for $i from 1 through 12 {
+			&.col-sm-#{$i} {
+				width: calc(100% * (#{$i}/12));
+			}	
+		}
+    }
+    @include mixins.breakpoint(md) {
+        @for $i from 1 through 12 {
+			&.col-md-#{$i} {
+				width: calc(100% * (#{$i}/12));
+			}	
+		}
+    }
+    @include mixins.breakpoint(lg) {
+        @for $i from 1 through 12 {
+			&.col-lg-#{$i} {
+				width: calc(100% * (#{$i}/12));
+			}	
+		}
+    }
+    @include mixins.breakpoint(xl) {
+        @for $i from 1 through 12 {
+			&.col-xl-#{$i} {
+				width: calc(100% * (#{$i}/12));
+			}	
+		}
+    }
+	&.text-align-left {
+		text-align: left;
+	}
+	&.text-align-center {
+		text-align: center;
+	}
+	&.text-align-right {
+		text-align: right;
+	}
+	&.flex {
+		display: flex;
+	}
+	&.align-items-left {
+		align-items: left;
+	}
+	&.align-items-center {
+		align-items: center;
+	}
+	&.align-items-right {
+		align-items: right;
+	}
+}

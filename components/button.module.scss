@@ -1,0 +1,22 @@
+.btn {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0;
+    color: black;
+    &_primary {
+        background-color: red;
+        color: white;
+    }
+    &_secondary {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+    &.inverted {
+        background-color: black;
+        border: 1px solid white;
+        text-transform: uppercase;
+        color: white;
+    }
+}

@@ -1,0 +1,31 @@
+@use "../styles/abstracts/mixins.scss";
+
+.btn_ui {
+    background-color: transparent;
+    border: 0;
+    &.menu {
+        //background-color: lime ;
+        @include mixins.breakpoint(md) {
+            display: none
+        }
+    }
+    &.search {
+        //background-color: royalblue;
+        @include mixins.breakpoint(md) {
+            display: none
+        }
+    }
+    &.close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: 1px solid #fff;
+    }
+    &.play {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,22 @@
+@mixin breakpoint($size) {
+	@if ($size == "xs") {
+		@media all and (max-width: 699px) {
+			@content;
+		}
+	}
+	@else if ($size == "sm") {
+		@media all and (min-width: 700px) {
+			@content;
+		}
+	}
+	@else if ($size == "md") {
+		@media all and (min-width: 1000px) {
+			@content;
+		}
+	}
+	@else if ($size == "lg") {
+		@media all and (min-width: 1200px) {
+			@content;
+		}
+	}
+}

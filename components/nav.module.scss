@@ -1,0 +1,36 @@
+@use '../styles/abstracts/mixins';
+
+.nav {
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            a {
+                color: #fff;
+                font-weight: bold;
+                padding: 1rem;
+            }
+        }
+    }
+    &.mobile {
+        ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        @include mixins.breakpoint(md) {
+            display: none;
+        }
+    }
+    &.desktop {
+        display: none;
+        @include mixins.breakpoint(md) {
+            display: block;
+        }
+    }
+    &.social-media {
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

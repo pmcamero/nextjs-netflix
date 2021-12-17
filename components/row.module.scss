@@ -1,0 +1,15 @@
+@use "../styles/abstracts/mixins.scss";
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    &.justify-content-space-between {
+        justify-content: space-between;
+    }
+    &.justify-content-flex-end {
+        justify-content: flex-end;
+    }
+    &.align-items-center {
+        align-items: center;
+    } //aligns the items in the vertical center
+}
